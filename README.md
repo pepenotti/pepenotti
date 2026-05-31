@@ -1,6 +1,6 @@
 # Hey, I'm Antonio 👋
 
-I'm a problem-solver based in Argentina. Full-stack developer with 10+ years across backend, frontend, DevOps, and cloud — I go wherever the problem is. Heavy experience in the Azure ecosystem and comfortable working end-to-end from infrastructure to UI.
+I'm a problem-solver based in Argentina. Full-stack developer with 10+ years across backend, frontend, DevOps, and cloud. I go wherever the problem is. Heavy experience in the Azure ecosystem and comfortable working end-to-end from infrastructure to UI.
 
 Currently building things on the side and figuring out what sticks.
 
