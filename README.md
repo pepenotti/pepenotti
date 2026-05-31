@@ -40,7 +40,7 @@ Currently building things on the side and figuring out what sticks.
 
 ## 📄 Resume
 
-I keep the formal stuff on LinkedIn — feel free to check it out if you want the full picture.
+I keep the formal stuff on LinkedIn. Feel free to check it out if you want the full picture.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-antonio--franchinotti-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/antonio-franchinotti/)
 
