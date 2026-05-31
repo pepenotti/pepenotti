@@ -2,7 +2,7 @@
   <v-container class="fill-height" style="min-height: calc(100vh - 112px)">
     <v-row align="center" justify="center">
       <v-col cols="12" md="8" lg="6">
-        <h1 class="text-h2 font-weight-bold mb-4">
+        <h1 class="text-h3 text-sm-h2 font-weight-bold mb-4">
           Antonio<br />Franchinotti
         </h1>
         <p class="text-h6 text-medium-emphasis font-weight-regular mb-8">

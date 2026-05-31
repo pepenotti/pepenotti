@@ -1,24 +1,43 @@
 <template>
   <v-app :theme="currentTheme">
+    <v-navigation-drawer v-model="drawer" temporary>
+      <v-list nav class="pt-4">
+        <v-list-item
+          v-for="item in navItems"
+          :key="item.to"
+          :to="item.to"
+          :title="item.label"
+          class="text-uppercase text-caption"
+          @click="drawer = false"
+        />
+      </v-list>
+    </v-navigation-drawer>
+
     <v-app-bar flat border="b" height="56">
+      <v-app-bar-nav-icon
+        class="d-flex d-md-none"
+        @click="drawer = !drawer"
+      />
       <v-app-bar-title>
-        <router-link to="/" class="text-decoration-none text-high-emphasis font-weight-bold letter-spacing-wide">
+        <router-link to="/" class="text-decoration-none text-high-emphasis font-weight-bold">
           AF
         </router-link>
       </v-app-bar-title>
 
       <v-spacer />
 
-      <v-btn
-        v-for="item in navItems"
-        :key="item.to"
-        :to="item.to"
-        variant="text"
-        class="text-caption text-uppercase"
-        active-class="font-weight-bold"
-      >
-        {{ item.label }}
-      </v-btn>
+      <div class="d-none d-md-flex">
+        <v-btn
+          v-for="item in navItems"
+          :key="item.to"
+          :to="item.to"
+          variant="text"
+          class="text-caption text-uppercase"
+          active-class="font-weight-bold"
+        >
+          {{ item.label }}
+        </v-btn>
+      </div>
 
       <v-btn
         :icon="isDark ? 'mdi-weather-sunny' : 'mdi-weather-night'"
@@ -38,10 +57,11 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { ref, computed } from 'vue'
 import { useTheme } from 'vuetify'
 
 const vuetifyTheme = useTheme()
+const drawer = ref(false)
 
 const isDark = computed(() => vuetifyTheme.global.current.value.dark)
 const currentTheme = computed(() => isDark.value ? 'dark' : 'light')

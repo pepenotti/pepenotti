@@ -13,9 +13,8 @@
             prepend-icon="mdi-email-outline"
             size="large"
             block
-            max-width="320"
           >
-            antonio@franchinotti.com.ar
+            Email
           </v-btn>
           <v-btn
             href="https://www.linkedin.com/in/antonio-franchinotti/"
@@ -23,7 +22,6 @@
             prepend-icon="mdi-linkedin"
             size="large"
             block
-            max-width="320"
           >
             LinkedIn
           </v-btn>
@@ -33,7 +31,6 @@
             prepend-icon="mdi-github"
             size="large"
             block
-            max-width="320"
           >
             GitHub
           </v-btn>
